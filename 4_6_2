@@ -63,3 +63,4 @@ print(confusion_mat_train2)
 prob_train2 = (confusion_mat_train2[1,1]+confusion_mat_train2[0,0])/sum(sum(confusion_mat_train2))
 print(prob_train2)
 
+print(glm_train2.predict(pd.DataFrame([[1.2, 1.1], [1.5, -0.8]], columns = ["Lag1", "Lag2"])))
