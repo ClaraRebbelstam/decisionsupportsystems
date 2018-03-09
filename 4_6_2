@@ -28,9 +28,6 @@ prob = (confusion_mat[1,1]+confusion_mat[0,0])/sum(sum(confusion_mat))
 print(prob)
 
 # Train data med data før år 2005
-
-train_data2 = data.Year<2005
-
 train_data = data[0:sum(data.Year<2005)]
 test_data = data[sum(data.Year<2005):] #test_data bruges i confusion matrix fordi train_data er unbalanced
 
